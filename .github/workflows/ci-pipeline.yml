@@ -15,6 +15,10 @@ jobs:
    # Step B: Prove the Node.js dependencies can be installed
    - name: Install Dependencies
      run: npm install
+   #the new shift left security gate
+     name: Run Unit Tests
+     run: npm test
    # Step C: The Ultimate Test - Does our Dockerfile actually compile?
    - name: Test Docker Build
      run: docker build -t test-api-image .
+   
