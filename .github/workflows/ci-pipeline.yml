@@ -16,7 +16,7 @@ jobs:
    - name: Install Dependencies
      run: npm install
    #the new shift left security gate
-     name: Run Unit Tests
+   - name: Run Unit Tests
      run: npm test
    # Step C: The Ultimate Test - Does our Dockerfile actually compile?
    - name: Test Docker Build
