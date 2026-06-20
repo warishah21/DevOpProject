@@ -10,7 +10,7 @@ COPY . .
 # Same-origin API when UI is served by Express from this container
 ENV VITE_API_URL=/api
 
-RUN npm run build
+RUN nmp run build
 
 # --- Production image: Node + built static files ---
 FROM node:20-alpine AS production
